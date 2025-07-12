@@ -12,8 +12,6 @@ This is a calculator web app built with HTML, CSS, and JavaScript.
 
 ## Credits
 
-## Credits
-
 The UI design is inspired by a Figma community file by **Claudia Livia**  
 🔗 [Figma Source](https://www.figma.com/community/file/1101501251422381707/calculator)
 
