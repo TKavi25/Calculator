@@ -1,0 +1,61 @@
+.dark *{
+    color: #FFFFFF;
+}
+
+.dark .screen{
+    background-color: #262626;
+}
+
+.dark .result-display{
+    color: rgb(201, 201, 201);
+}
+
+.dark .sun{
+    background-color: transparent;
+    border-color: #3D3D3D;
+    border-right: none;
+}
+
+.dark .moon{
+    background-color: #000000;
+    border-color: #000000;
+}
+
+.dark #calc{
+    background-color: #3B3B3B;
+    box-shadow: 0.6cqw 0.7cqw 1cqw #14141480, inset 0 0 0.2cqw #323232;
+}
+.dark .symbol{
+    background-color: #3B3B3B;
+}
+.dark .equal-symbol{
+    background: none;
+}
+.dark .numbers-button{
+    background-color: #41434A;
+}
+.dark .zero-button .decimal-point{
+    background-color: #41434A;
+}
+.dark{
+    background-color: #313131;
+}
+.dark .bottom-part{
+    box-shadow: inset 0 0 0.2cqw #1F1E1E;
+    background: linear-gradient(to top right, #35353B , #1D1C1C 70%);
+}
+
+.dark .symbol:hover, .dark .numbers-button:hover{
+    color: #b6b6b6;
+}
+
+.dark .symbol:active, .dark .numbers-button:active{
+    color: #949494;
+}
+
+.dark #sun{
+    fill: black;
+}
+.dark #moon{
+    fill: white;
+}

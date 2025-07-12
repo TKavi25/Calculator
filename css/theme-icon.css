@@ -1,0 +1,75 @@
+.moon, .sun{
+    display: flex;
+    justify-content: center;
+    border: 0.1cqw solid;
+
+}
+
+
+
+.sun{
+    border-radius: 35% 0% 0% 35%;
+    background-color: #3D3D3D;
+    border-color: #3D3D3D;
+    
+}
+.moon{
+    background-color: transparent;
+    border-radius: 0% 35% 35% 0%;
+    border-color: #FFFFFF80;
+    border-left: none;
+
+}
+
+
+
+
+.theme-icon{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    z-index: 9999;
+    width:16%;
+    left: 10%;
+    top: 5%;
+
+}
+
+
+
+.sun:hover{
+    cursor: pointer;
+    filter: brightness(120%);
+}
+.moon:hover{
+    cursor: pointer;
+    background-color: #ffffff23;
+}
+
+.sun:active{
+    filter: brightness(85%);
+}
+.sun:active #sun{
+    width: 45%;
+    margin: 27.5% 0%;
+}
+
+.moon:active{
+    background-color: #d4d7da;
+    border-color: #e2e6e9;
+}
+.moon:active #moon{
+    width: 45%;
+    margin: 27.5% 0%;
+}
+
+#sun{
+    width: 55%;
+    margin:22% 0px;
+    fill: white;
+}
+#moon{
+    margin:25% 0px;
+    width: 50%;
+    fill: black;
+}

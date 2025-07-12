@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="css\calculator.css">
+    <link rel="stylesheet" href="css\bottom-part.css">
+    <link rel="stylesheet" href="css\theme-icon.css">
+    <link rel="stylesheet" href="css\display.css">
+    <link rel="stylesheet" href="css\dark-mode.css">
+    <link rel="stylesheet" href="css\media-query.css">
+
+
+    <script src="library\math.min.js"></script>
+    
+</head>
+<body>
+
+
+
+    <div id="calc">
+
+        <div class="theme-icon">
+            <div class="sun">
+                <svg id="sun" viewBox="0 0 377 379" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M193 313C195.761 313 198 315.239 198 318V374C198 376.761 195.761 379 193 379C190.239 379 188 376.761 188 374V318C188 315.239 190.239 313 193 313ZM79.0625 285.465C81.0151 283.512 84.1812 283.512 86.1338 285.465C88.086 287.417 88.086 290.583 86.1338 292.535L46.5352 332.134C44.5826 334.086 41.4174 334.086 39.4648 332.134C37.5122 330.181 37.5122 327.015 39.4648 325.062L79.0625 285.465ZM291.535 285.465C293.488 283.512 296.654 283.512 298.606 285.465L338.204 325.062C340.157 327.015 340.157 330.181 338.204 332.134C336.252 334.086 333.086 334.086 331.134 332.134L291.535 292.535C289.583 290.583 289.583 287.417 291.535 285.465ZM188.5 90C243.452 90 288 134.548 288 189.5C288 244.452 243.452 289 188.5 289C133.548 289 89 244.452 89 189.5C89 134.548 133.548 90 188.5 90ZM188.5 100C139.071 100 99 140.071 99 189.5C99 238.929 139.071 279 188.5 279C237.929 279 278 238.929 278 189.5C278 140.071 237.929 100 188.5 100ZM61 189C63.7614 189 66 191.239 66 194C66 196.761 63.7614 199 61 199H5C2.23858 199 2.87698e-06 196.761 0 194C2.41411e-07 191.239 2.23858 189 5 189H61ZM372 189C374.761 189 377 191.239 377 194C377 196.761 374.761 199 372 199H316C313.239 199 311 196.761 311 194C311 191.239 313.239 189 316 189H372ZM46.5352 39.4648C48.4878 37.5122 51.6538 37.5122 53.6064 39.4648L93.2041 79.0625C95.1567 81.0151 95.1567 84.1812 93.2041 86.1338C91.2515 88.0859 88.0863 88.086 86.1338 86.1338L46.5352 46.5352C44.583 44.5826 44.583 41.4174 46.5352 39.4648ZM324.062 39.4648C326.015 37.5122 329.181 37.5122 331.134 39.4648C333.086 41.4174 333.086 44.5826 331.134 46.5352L291.535 86.1338C289.583 88.086 286.417 88.086 284.465 86.1338C282.512 84.1812 282.512 81.0151 284.465 79.0625L324.062 39.4648ZM193 0C195.761 -1.66252e-07 198 2.23858 198 5V61C198 63.7614 195.761 66 193 66C190.239 66 188 63.7614 188 61V5C188 2.23858 190.239 1.66252e-07 193 0Z"/>
+                </svg>
+            </div><!--
+        --><div class="moon">
+                <svg id="moon" viewBox="0 0 259 258" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M86.041 0.529297C84.5531 4.58438 83.2572 8.73239 82.167 12.9629C39.5999 32.3071 10 75.1966 10 125C10 192.931 65.069 248 133 248C183.923 248 227.617 217.054 246.305 172.942C250.504 171.744 254.617 170.343 258.634 168.75C240.541 220.711 191.126 258 133 258C59.5461 258 0 198.454 0 125C0 68.0772 35.7606 19.5082 86.041 0.529297ZM98.3145 6.2168C90.6628 27.6978 89.3683 50.9298 94.5859 73.1279C99.8037 95.3264 111.313 115.549 127.733 131.372C144.154 147.195 164.789 157.948 187.165 162.34C209.541 166.732 232.71 164.577 253.893 156.135L258.869 168.621C235.285 178.02 209.489 180.418 184.576 175.528C159.663 170.638 136.688 158.668 118.406 141.051C100.125 123.434 87.3113 100.919 81.502 76.2041C75.6926 51.4891 77.134 25.6226 85.6533 1.70605L98.3145 6.2168Z"/>
+                </svg>
+            </div>
+        </div>
+
+        <div class="display-main-container">
+            <input type="text" class="main-display" maxlength="12">
+        </div>
+        <div class="display-result-container">
+            <input type="text" class="result-display" readonly tabindex="-1">
+        </div>
+
+        <div class="screen">
+        </div>
+        <div class="bottom-part">
+            <div class="buttons-container">
+                <div class="buttons-container1">
+                    <div class="symbol clear-button">C</div>
+                    <div class="symbol excludeJs plus-minus-button">+/-</div>
+                    <div class="symbol">%</div>
+                    <div class="symbol">÷</div>
+                    <div class="numbers-button">7</div>
+                    <div class="numbers-button">8</div>
+                    <div class="numbers-button">9</div>
+                    <div class="symbol">×</div>
+                    <div class="numbers-button">4</div>
+                    <div class="numbers-button">5</div>
+                    <div class="numbers-button">6</div>
+                    <div class="symbol">−</div>
+                    <div class="numbers-button">1</div>
+                    <div class="numbers-button">2</div>
+                    <div class="numbers-button">3</div>
+                    <div class="symbol">+</div>
+                </div>
+                <div class="buttons-container2">
+                    <div class="numbers-button last-row-button zero-button" >0</div>
+                    <div class="numbers-button last-row-button decimal-point">.</div>
+                    <div class="symbol equal-symbol excludeJs">=</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js\theme.js"></script>
+    <script src="js\main-display.js"></script>
+    <script src="js\button.js"></script>
+    <script src="js\calculator.js"></script>
+</body>
+</html>
