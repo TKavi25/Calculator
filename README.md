@@ -21,7 +21,7 @@ This project was built for learning and practice purposes.
 
 ## How to Use
 
-Open `calculator.html` in a web browser to use the calculator.
+Open `index.html` in a web browser to use the calculator.
 
 ---
 
