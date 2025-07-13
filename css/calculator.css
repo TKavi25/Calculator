@@ -16,8 +16,9 @@ body{
     margin: auto;
     box-shadow: 0.6cqw 0.7cqw 1cqw #3D3D3D66, inset 0 0 0.2cqw #FFFFFF4D;
     background-color: #EAEFF2;
-    border-radius: 1cqw 1cqw 4% 4%;
+    border-radius: 1cqw;
     position: relative;
 
     container-type: inline-size;
+    overflow: hidden;
 }
