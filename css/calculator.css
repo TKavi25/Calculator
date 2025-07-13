@@ -16,7 +16,7 @@ body{
     margin: auto;
     box-shadow: 0.6cqw 0.7cqw 1cqw #3D3D3D66, inset 0 0 0.2cqw #FFFFFF4D;
     background-color: #EAEFF2;
-    border-radius: 1cqw;
+    border-radius: 4% / 2.3%;
     position: relative;
 
     container-type: inline-size;
