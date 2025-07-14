@@ -11,10 +11,11 @@ function calculatedResult(){
 
 const resultDisplay = document.querySelector(".result-display");
 
-let errorShown = false
+let errorShown = false;
+let plusMinusButtonClicked = false;
 
 mainDisplay.addEventListener("input", () =>{
-    if (errorShown){
+    if (errorShown && !plusMinusButtonClicked){
         mainDisplay.value = mainDisplay.value.slice(-1);
         
         mainDisplay.dispatchEvent(new Event("input"));
@@ -37,6 +38,7 @@ mainDisplay.addEventListener("input", () =>{
         resultDisplay.value = result;
     } catch (error) {
         resultDisplay.value = "";
+        plusMinusButtonClicked = false;
 
     }
 });

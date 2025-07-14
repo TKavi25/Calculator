@@ -37,14 +37,23 @@ const plusMinusButton = document.querySelector(".plus-minus-button");
 const toggleSign = () =>{
     if(mainDisplay.value.startsWith("-")){
         mainDisplay.value = mainDisplay.value.slice("1");
+
+        mainDisplay.dispatchEvent(new Event("input"));
     }else if(mainDisplay.value.startsWith("(")){
         mainDisplay.value = "-" + mainDisplay.value;
+
+        mainDisplay.dispatchEvent(new Event("input"));
     }else if(errorShown){
-        mainDisplay.value = mainDisplay.value;
+        mainDisplay.value = "-(";
+        errorShown =false;
+       plusMinusButtonClicked = true;
+       mainDisplay.dispatchEvent(new Event("input"));
     }else{
         mainDisplay.value = "-(" + mainDisplay.value;
+
+        mainDisplay.dispatchEvent(new Event("input"));
     };
-    mainDisplay.dispatchEvent(new Event("input"));
+    
 };
 
 plusMinusButton.addEventListener("click", toggleSign);
