@@ -1,5 +1,6 @@
  @media (aspect-ratio > 1){
     #calc{
+        height: 90dvh;
         height: 90vh;
         aspect-ratio: 410/724;
 
@@ -14,6 +15,7 @@
 }
 @media (210/360 < aspect-ratio <= 1){
     #calc{
+        height: 90dvh;
         height: 90vh;
         aspect-ratio: 410/724;
 

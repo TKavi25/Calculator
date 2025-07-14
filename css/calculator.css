@@ -14,7 +14,7 @@ body{
     display: flex;
     flex-direction: column;
     margin: auto;
-    box-shadow: 0.6cqw 0.7cqw 1cqw #3D3D3D66, inset 0 0 0.2cqw #FFFFFF4D;
+    box-shadow: min(6px, 0.6cqw) min(7px, 0.7cqw) min(10px, 1cqw) #3D3D3D66, inset 0 0 0.2cqw #FFFFFF4D;
     background-color: #EAEFF2;
     border-radius: 4% / 2.3%;
     position: relative;

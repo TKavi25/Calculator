@@ -41,3 +41,11 @@ mainDisplay.addEventListener("input", () =>{
     }
 });
 
+mainDisplay.addEventListener("keydown", (e)=>{
+    if (errorShown && e.key === "Backspace"){
+        e.preventDefault();
+        mainDisplay.value = "";
+        errorShown = false;
+        mainDisplay.dispatchEvent(new Event("input"));
+    }
+})
