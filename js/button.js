@@ -44,6 +44,7 @@ const toggleSign = () =>{
     }else{
         mainDisplay.value = "-(" + mainDisplay.value;
     };
+    mainDisplay.dispatchEvent(new Event("input"));
 };
 
 plusMinusButton.addEventListener("click", toggleSign);
