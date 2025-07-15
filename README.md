@@ -25,6 +25,13 @@ Open `index.html` in a web browser to use the calculator.
 
 ---
 
+## Browser Support
+
+This project uses modern CSS features like `@media (aspect-ratio > ...)`, which may not be supported in all browsers.  
+For best results, use a modern Chromium-based browser (e.g., Chrome, Edge).
+
+---
+
 ## License
 
 This project is for educational purposes only.
